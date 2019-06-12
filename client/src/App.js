@@ -4,11 +4,10 @@ import './App.css';
 function App() {
   return (
     <div>
-      Changess
-      Changess Jake
-      Changessss
+      <Navbar/>
     </div>
   );
 }
 
 export default App;
+
