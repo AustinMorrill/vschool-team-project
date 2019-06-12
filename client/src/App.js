@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      Changesssssssss
+      <Navbar/>
     </div>
   );
 }
