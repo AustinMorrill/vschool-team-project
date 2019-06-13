@@ -6,12 +6,20 @@ body {
 	font-size: 10pt;
 }
 
+.root__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .about__container {
 
 }
 
 .about__title {
 	font-family: 'Dancing Script', cursive;
+	font-size: 1.5rem;
 }
 
 .about__body {

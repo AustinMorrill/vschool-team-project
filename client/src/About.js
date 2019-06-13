@@ -10,7 +10,7 @@ const About = () => {
 			style cuisine inspired by our own family roots and cultures. We know you'll love our food as
 			much as we love having you with us!</p> 
 			
-			<h3 className='about__sig'>- Jeff ${'&'} Mara Criddle</h3>
+			<h3 className='about__sig'>- Jeff {'&'} Mara Criddle</h3>
 		</div>
 	)
 }
