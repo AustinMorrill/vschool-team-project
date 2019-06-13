@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.5.15"
+    "mongoose": "^5.5.15",
+    "react-burger-menu": "^2.6.10"
   }
 }
