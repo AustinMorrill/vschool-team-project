@@ -1,0 +1,28 @@
+.cls-1 {
+    fill:rgba(255,0,0,0.01);
+    stroke:yellow;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 12.14px;
+    stroke-width: 10px;
+    stroke-dasharray: 950px;
+    stroke-dashoffset: 950px;
+    animation-name: trace;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier;
+}
+
+@keyframes trace {
+    80% {
+      fill: rgba(255,69,0,0.8);
+      stroke: rgba(255,69,0,0.5);
+    }
+    100% {
+      fill: rgba(255,255,0,0.2);
+      stroke-dashoffset: 0px;
+      stroke: rgba(0,0,0,.8);
+    }
+  }
