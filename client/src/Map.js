@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
+import GoogleMapReact from 'google-map-react';
+require("dotenv").config()
+ 
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-const Maps = () => {
-	return (
-		<div className='maps__container'>
-			Maps placeholder
-		</div>
-	);
+class SimpleMap extends Component {
+  static defaultProps = {
+    center: {
+      lat: 41.19,
+      lng: -111.97
+    },
+    zoom: 14
+  };
+ 
+  render() {
+    return (
+			// Important! Always set the container height explicitly
+			<div style={{ height: "100vh", width: "100%" }}>
+				<GoogleMapReact
+					bootstrapURLKeys={{ key: "AIzaSyDDtcmzlvN0yHY6MSXvch_EkzOP97SdTwA" }}
+					defaultCenter={this.props.center}
+					defaultZoom={this.props.zoom}
+				>
+					<AnyReactComponent lat={41.19} lng={-111.97} text='Criddles Cafe' />
+				</GoogleMapReact>
+			</div>
+		)
+  }
 }
-
-export default Maps;
+ 
+export default SimpleMap;

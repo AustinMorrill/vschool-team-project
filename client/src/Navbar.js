@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
 	return (
 		<header className='navbar__container'>
-			<nav className='navbar'>
+			{/* <nav className='navbar'>
 				<ul classname='navbar__menu'>
 					<li className='navbar__item'><a className='nav__link' href='#'>Home</a></li>
 					<li className='navbar__item'><a className='nav__link' href='#'>Menu</a></li>
@@ -11,7 +11,7 @@ const Navbar = () => {
 					<li className='navbar__item'><a className='nav__link' href='#'>Contact</a></li>
 					<li className='navbar__item'><a className='nav__link' href='#'>Directions</a></li>
 				</ul>
-			</nav>
+			</nav> */}
 		</header>
 	)
 }

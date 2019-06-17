@@ -1,9 +1,13 @@
 const express = require("express")
 const app = express()
-const PORT = 4141
+const cors = require('cors')
+require("dotenv").config()
+const PORT = process.env.PORT
 const mongoose = require("mongoose")
 
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 
 app.use((err, request, response, next) => {
     console.log(err)
@@ -11,6 +15,7 @@ app.use((err, request, response, next) => {
 })
 
 app.use("/menu", require("./routes/menuRoutes"))
+app.use("/mail", require("./routes/mailRoutes"))
 
 mongoose.connect("mongodb://localhost:27017/cc-menu", 
     {

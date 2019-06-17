@@ -4,6 +4,7 @@ body {
 	font-family: 'Montserrat', 'Courier New', Courier, monospace;
 	box-sizing: border-box;
 	font-size: 10pt;
+	/* background: linear-gradient(to right, #747474, #646464) */
 }
 
 .root__container {
@@ -13,8 +14,17 @@ body {
 	justify-content: space-between;
 }
 
-.about__container {
+.root__container > div {
+	width: 95%;
+	border: solid black 2pt;
+	border-radius: 3pt;
+	margin-bottom: 10pt;
+	padding: 0 10pt 5pt 10pt;
+}
 
+.about__container {
+	text-align: center;
+	background: #fcfdd8;
 }
 
 .about__title {
@@ -23,9 +33,20 @@ body {
 }
 
 .about__body {
-
+	width: 80%;
 }
 
 .about__sig {
+
+}
+
+.contact__container {
+	background: #fcfdd8;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
 
 }
