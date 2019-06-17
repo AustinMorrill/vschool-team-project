@@ -1,4 +1,36 @@
+<<<<<<< HEAD
 .cls-1 {
+=======
+.home__container {
+    background-image: url("./images/cc-restaurant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-background {
+    background: rgba(255,255,255,0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+    width: 90vw;
+}
+
+/* .cls-1 {
+>>>>>>> 5597db06808bfe49ef0cdc475581c9ea0f1137d9
     fill:rgba(255,0,0,0.01);
     stroke:yellow;
     stroke-linecap: round;
@@ -8,6 +40,7 @@
     stroke-dasharray: 950px;
     stroke-dashoffset: 950px;
     animation-name: trace;
+<<<<<<< HEAD
     animation-delay: 1s;
     animation-duration: 7s;
     animation-fill-mode: forwards;
@@ -17,12 +50,93 @@
 
 @keyframes trace {
     80% {
+=======
+    animation-delay: 1.25s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier;
+} */
+
+.cls-sun, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-1, .cls-2, .cls-3 {
+    fill:rgba(255,0,0,0.01);
+    stroke:yellow;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 12.14px;
+    stroke-width: 10px;
+    stroke-dasharray: 950px;
+    stroke-dashoffset: 950px;
+    animation-name: trace;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier;  
+}
+
+.cls-sun {
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+}
+.cls-7 {
+    animation-delay: 2s;
+}
+.cls-8 {
+    animation-delay: 2.25s;
+}
+.cls-9 {
+    animation-delay: 2.5s;
+}
+.cls-10 {
+    animation-delay: 2.75s;
+}
+.cls-11 {
+    animation-delay: 3s;
+}
+.cls-12 {
+    animation-delay: 3.25s;
+}
+.cls-1 {
+    animation-delay: 3.5s;
+}
+.cls-2 {
+    animation-delay: 3.75s;
+}
+.cls-3 {
+    animation-delay: 4s;
+    animation-duration: 2s;
+}
+
+@keyframes trace {
+    90% {
+>>>>>>> 5597db06808bfe49ef0cdc475581c9ea0f1137d9
       fill: rgba(255,69,0,0.8);
       stroke: rgba(255,69,0,0.5);
     }
     100% {
+<<<<<<< HEAD
       fill: rgba(255,255,0,0.2);
       stroke-dashoffset: 0px;
       stroke: rgba(0,0,0,.8);
     }
   }
+=======
+      fill: rgba(255,255,0,0.7);
+      stroke-dashoffset: 0px;
+      stroke: rgba(255,255,0,.8);
+    }
+}
+
+@media (min-width: 600px) {
+    svg {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    svg {
+        width: 45vw;
+    }
+}
+>>>>>>> 5597db06808bfe49ef0cdc475581c9ea0f1137d9
