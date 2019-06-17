@@ -17,7 +17,7 @@ const menuSchema = new Schema({
     menuType: {
         type: String,
         required: true,
-        enum: ["breakfast", "lunch", "side", "beverage"],
+        enum: ["breakfast", "lunch", "side", "dough", "beverage"],
         default: "breakfast"
     },
     subMenuType: {

@@ -1,0 +1,33 @@
+.MenuItem__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.MenuItem__container > h2 {
+    flex: 1 1 50%;
+    justify-self: end;
+}
+/* .MenuItem__container > :nth-child(2) {
+    justify-self: flex-end;
+} */
+.outer-modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+}
+.modal-show {
+    position: fixed;
+    width: 70vw;
+    height: 75vh;
+    z-index: 2;
+    background: slategray;
+    color: #f7f7f7;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
