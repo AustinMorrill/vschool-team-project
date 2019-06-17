@@ -43,9 +43,10 @@ backDropClickHandler= ()=>{
       backDrop = <BackDrop click={this.backDropClickHandler}/>
     }
   return (
-    <div "root__container">
+    <>
       <Navbar hamburgerClickHandler = {this.hamburgerBtnClickHandler} crossHandler={this.handleCrossBtn}/>
      <SideDrawer show={this.state.sideDrawerOpen}/>
+    <div className="root__container">
       {backDrop}
       <Home />
       <Menu />
@@ -54,6 +55,7 @@ backDropClickHandler= ()=>{
       <Map />
       <Footer />
     </div>
+    </>
   )}
 
 }

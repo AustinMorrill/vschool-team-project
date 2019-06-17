@@ -6,7 +6,7 @@ const Menu = () => {
 	const [ menuItems, setMenuItems ] = useState([])
 
 	// const getMenuItems = () => {
-	// 	axios.get("/menu").then(response => {
+	// 	axios.get("menu").then(response => {
 	// 		setMenuItems(response.data)
 	// 	})
 	// } 
@@ -43,7 +43,7 @@ const Menu = () => {
 
 	console.log(menuItems)
 	return (
-		<div className='menu__container'>
+		<div className='menu__container' id="menu">
 			<h1>MENU</h1>
 			{mappedMenuItems}
 		</div>

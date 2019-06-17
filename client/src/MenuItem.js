@@ -25,7 +25,7 @@ const MenuItem = (props) => {
 		<div>
 			{showItemDescription}
 		</div>
-		{modal}
+		{/* {modal} */}
 	</div>
 	);
 }
