@@ -15,10 +15,8 @@ constructor(){
   super()
   this.state={
     sideDrawerOpen:false,
-    crossBtn: false
-    
+    crossBtn: false    
   }
-
 }
 
 hamburgerBtnClickHandler=()=>{
@@ -36,13 +34,6 @@ backDropClickHandler= ()=>{
 //   })
 // }
 
-
-
-
-
-
-
-
   render(){
     let sideDrawer
     let backDrop
@@ -52,7 +43,7 @@ backDropClickHandler= ()=>{
       backDrop = <BackDrop click={this.backDropClickHandler}/>
     }
   return (
-    <div>
+    <div "root__container">
       <Navbar hamburgerClickHandler = {this.hamburgerBtnClickHandler} crossHandler={this.handleCrossBtn}/>
      <SideDrawer show={this.state.sideDrawerOpen}/>
       {backDrop}
@@ -63,8 +54,7 @@ backDropClickHandler= ()=>{
       <Map />
       <Footer />
     </div>
-  )
-  }
+  )}
 
 }
 export default App
