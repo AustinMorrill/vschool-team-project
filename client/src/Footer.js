@@ -11,20 +11,22 @@ const Footer = () => {
 			<div className='contact1'>
 				<div className='address'>
 					<h4 className='contacts'>Address</h4>
-					<p className='addressp'>350 37th St, Ogden, UT 84405</p>
+					  350 37th St, Ogden, UT 84405
 				</div>
+				<br/>
 				<div className='hours'>
 					<h4 className='contacts'>Hours</h4>
-					<span>Mon - Sat: 7am - 3pm
+					Mon - Sat: 7am - 3pm
+					<br/>
 						Closed Sunday
-					</span>
 				</div>
+				<br/>
 				<div className='contactus'>
 					<h4 className='contacts'>Contact Us</h4>
-					<span> (801) 621 -4659
+					(801) 621 -4659
 						<br/>
 						<a href='#contact' className='contactUs'>criddlescafe@gmail.com</a>
-					</span>
+					
 				</div>
 			 </div>
 			<div className='icons'>

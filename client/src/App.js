@@ -42,7 +42,7 @@ backDropClickHandler= ()=>{
   return (
     <>
       <Navbar hamburgerClickHandler = {this.hamburgerBtnClickHandler} crossHandler={this.handleCrossBtn}/>
-      <SideDrawer show={this.state.sideDrawerOpen}/>
+      <SideDrawer show={this.state.sideDrawerOpen} closeClick={this.backDropClickHandler}/>
       {backDrop}
       <div className="root__container">
         <Home />

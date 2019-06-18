@@ -1,6 +1,6 @@
 .footer__container{
     width: 100%;
-    background-color: #890007;
+    background-color: #c46468;
     height: 35vh;
     display: flex;
    
@@ -28,19 +28,25 @@
 }
 .contacts{
     text-decoration: underline;
+    margin: 0;
 }
 .icons{
    position: relative;
    right: 300px;
+   
    
 }
 .icon{
     margin: 20px;
     color: #fcfdd8;
 }
+.icon:hover{
+    color:#d98331;
+}
 .contactUs{
     color:#fcfdd8;
 }
+
 @media(max-width:768px){
     .icons{
         display: flex;
@@ -49,4 +55,21 @@
         left: 25px;
         margin: 10px;
     }
+    .footer__container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .icons{
+        display: inline;
+        position: relative;
+        top:10px;
+        left: 10px;
+        
+    }
+    .contact1{
+        margin:10px;
+    }
+   
+   
+
 }

@@ -83,6 +83,7 @@
 
 .side_drawer li {
 	margin: 50px;
+
 }
 
 .side_drawer a:hover,
@@ -125,7 +126,20 @@
 	.side_drawer a {
 		position: relative;
 		right: 30px;
+		font-size: 30px;
+		
 	}
+
+}
+@media (max-width: 320px){
+	.side_drawer a{
+		 font-size: 20px; 
+		 
+	}
+	 .resName{
+		font-size: 20px;
+	} 
+
 }
 .resName {
 	position: relative;
@@ -139,4 +153,5 @@
 	.resName {
 		display: none;
 	}
+
 }
