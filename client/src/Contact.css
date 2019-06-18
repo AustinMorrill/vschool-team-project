@@ -11,10 +11,15 @@
 	border: solid black 1pt;
 }
 
-.contact-form > input {
-	width: 50%;
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+
 }
 
 .contact-form > textarea {
 	width: 80%;
 }
+
+

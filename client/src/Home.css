@@ -5,14 +5,15 @@
     background-position: center;
     background-attachment: fixed;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 56px 0pt 0pt 0pt;
 }
 
 .logo-background {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.35);
     height: 100%;
     width: 100%;
     display: flex;

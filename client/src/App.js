@@ -12,13 +12,10 @@ import BackDrop from './BackDrop';
 import './Navbar.css'
 
 class App extends Component {
-constructor(){
-  super()
-  this.state={
+  state = {
     sideDrawerOpen:false,
     crossBtn: false    
   }
-}
 
 hamburgerBtnClickHandler=()=>{
   this.setState((prevState)=>{
