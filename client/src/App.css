@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat&display=swap');
 
 body{
-        height: 300vh;
+        height: 100%;
         font-family: 'Montserrat', 'Courier New', Courier, monospace;
 	box-sizing: border-box;
         font-size: 10pt;
@@ -12,9 +12,7 @@ body{
         
 }
 
-.body{
-        height: 100%;
-}
+
 
 .root__container {
 	display: flex;
@@ -206,13 +204,34 @@ text-decoration: none;
         }
         .navbar{
                 justify-content: flex-end;
+
         }
+        .hamburger_btn{
+                position: relative;
+                right: 30px;
+        }
+        .side_drawer a{
+                position: relative;
+                right: 30px;
+        }
+
+        
+        
 }
+.resName{
+        position: relative;
+        right:59px;
+          
+      }
 
 @media(min-width:769px){
         .hamburger_btn{
                 display: none;
         }
+        .resName{
+                display: none;
+            }
+
 }
 
 .about__container {
