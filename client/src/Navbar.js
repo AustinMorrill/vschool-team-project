@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import HamburgerBtn from './HamburgerBtn'
+import './Navbar.css'
 import './App.css'
 
 

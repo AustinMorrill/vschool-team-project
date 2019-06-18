@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import axios from 'axios'
+import './Contact.css'
 
 
 const Contact = () => {
@@ -8,7 +9,6 @@ const Contact = () => {
 	const [subject, setSubject] = useState('')
 	const [message, setMessage] = useState('')
 	const [submit, setSubmit] = useState('Submit')
-	const [sent, setSent] = useState(false)
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -20,7 +20,6 @@ const Contact = () => {
 					message: message
 				}
 		axios.post('/mail', data).then(res => {
-			setSent(true)
 			setTimeout(resetForm(), 500)
 		})
 		.catch(() => {
@@ -38,46 +37,58 @@ const Contact = () => {
 	}
 
 	return (
-		<div className='contact__container' id="contact">
+		<div className='contact__container' id='contact'>
+			<h2>
+				Planning a special event?
+			</h2>
+			<h2>
+				Bringing a big group and need lots of space? 
+			</h2>
+			<h2>
+				Anything we can do to improve your visit? 
+			</h2>
+			<h2>
+				Message or call us ahead and let us know! We'd love to have you and your friends!
+			</h2>
 			<form className='contact-form' onSubmit={handleSubmit}>
-				<input 
-				value={name}
-				onChange={e => setName(e.target.value)}
-				placeholder='Full name'
-				type='text'
-				name='name'
-				required
+				<input
+					value={name}
+					onChange={e => setName(e.target.value)}
+					placeholder='Full name'
+					type='text'
+					name='name'
+					required
 				/>
 				<input
-				value={email}
-				onChange={e => setEmail(e.target.value)}
-				placeholder='E-mail'
-				type='email'
-				name='email'
-				required
+					value={email}
+					onChange={e => setEmail(e.target.value)}
+					placeholder='E-mail'
+					type='email'
+					name='email'
+					required
 				/>
 				<input
-				value={subject}
-				onChange={e => setSubject(e.target.value)}
-				placeholder='Subject'
-				type='text'
-				name='subject'
-				required
+					value={subject}
+					onChange={e => setSubject(e.target.value)}
+					placeholder='Subject'
+					type='text'
+					name='subject'
+					required
 				/>
 				<textarea
-				value={message}
-				onChange={e => setMessage(e.target.value)}
-				placeholder="Please enter your message..."
-				rows="5"
-				cols="50"
-				name='message'
-				type='text'
-				required
+					value={message}
+					onChange={e => setMessage(e.target.value)}
+					placeholder='Please enter your message...'
+					rows='5'
+					cols='50'
+					name='message'
+					type='text'
+					required
 				/>
-				<input type='submit' value={submit}/>
+				<input type='submit' value={submit} />
 			</form>
 		</div>
-	);
+	)
 }
 
 export default Contact;

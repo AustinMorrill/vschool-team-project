@@ -7,7 +7,7 @@ const Menu = () => {
 	const [ menuType, setMenuType ] = useState("")
 
 	useEffect(() => {
-		axios.get("menu").then(response => {
+		axios.get("/menu").then(response => {
 			setMenuItems(response.data)
 		})
 	}, [])

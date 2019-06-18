@@ -11,7 +11,9 @@ let transport = {
 	auth: {
 		user: process.env.MAIL_USER,
 		pass: process.env.MAIL_PASS
-	}
+	},
+	// debug: true, // show debug output
+  // logger: true // log information in conso
 }
 
 let transporter = nodemailer.createTransport(transport)
@@ -26,24 +28,25 @@ transporter.verify((error, success) => {
 
 mailRouter.route("/")
 
-	.post((req, response) => {
+	.post((req, res) => {
 		let data = req.body
 
 		let mailOptions = {
 				from: data.name,
 				to: 'austin.r.morrill@gmail.com',
 				subject: `Message from website, subject: "${data.subject}"`,
-				text: `Name of sender: ${data.name} \n E-mail of sender: ${data.email} \n Subject: ${data.subject} \n ${data.message}`
+				text: `Name of sender: ${data.name} \nE-mail of sender: ${data.email} \nSubject: ${data.subject} \n${data.message}`
 			}
 
-		transporter.sendMail(mailOptions, (err, response) => {
+		transporter.sendMail(mailOptions, (err, info) => {
 			if(err) {
-				response.send(err)
+				return console.log(error)
 			} else {
-				response.send('success')
-			}			
+				return console.log(`Email sent : ${info.response}`)
+			}					
 	})
-	response.send('message sent')
+	res.send('sent')
+	
 })
 
 module.exports = mailRouter
