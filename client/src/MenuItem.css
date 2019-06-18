@@ -3,9 +3,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+}
+.menu-title {
+    text-align: center;
+}
+.sub-menu-title {
+    text-align: center;
+}
+.item-title {
+    text-align: left;
 }
 .MenuItem__container > h2 {
-    flex: 1 1 50%;
+    flex: 1 1 33%;
     justify-self: end;
 }
 /* .MenuItem__container > :nth-child(2) {
