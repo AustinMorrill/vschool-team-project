@@ -1,0 +1,20 @@
+.contact__container {
+	background-color: rgba(174, 20, 27, .3);
+	color: rgba(217, 131, 49);
+}
+
+.contact-form > * {
+	font-size: 1.1rem;
+	margin: 2pt;
+	padding: 2pt;
+	border-radius: 1pt;
+	border: solid black 1pt;
+}
+
+.contact-form > input {
+	width: 50%;
+}
+
+.contact-form > textarea {
+	width: 80%;
+}

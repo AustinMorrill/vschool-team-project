@@ -9,6 +9,7 @@ import Map from './Map'
 import Footer from './Footer'
 import SideDrawer from './SideDrawer';
 import BackDrop from './BackDrop';
+import './Navbar.css'
 
 class App extends Component {
 constructor(){
@@ -37,24 +38,23 @@ backDropClickHandler= ()=>{
   render(){
     let sideDrawer
     let backDrop
-
-    if (this.state.sideDrawerOpen ){
-     
+    if (this.state.sideDrawerOpen ){     
       backDrop = <BackDrop click={this.backDropClickHandler}/>
     }
+
   return (
     <>
       <Navbar hamburgerClickHandler = {this.hamburgerBtnClickHandler} crossHandler={this.handleCrossBtn}/>
-     <SideDrawer show={this.state.sideDrawerOpen}/>
-    <div className="root__container">
+      <SideDrawer show={this.state.sideDrawerOpen}/>
       {backDrop}
-      <Home />
-      <Menu />
-      <About />
-      <Contact />
-      <Map />
-      <Footer />
-    </div>
+      <div className="root__container">
+        <Home />
+        <Menu />
+        <About />
+        <Contact />
+        <Map />
+        <Footer />
+      </div>
     </>
   )}
 
