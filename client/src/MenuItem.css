@@ -1,26 +1,86 @@
-.MenuItem__container {
+.menuItem__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    margin: -2pt 10pt;
 }
 .menu-title {
     text-align: center;
 }
 .sub-menu-title {
+    font-size: 2rem;
     text-align: center;
+    border-top: solid 2pt rgba(250, 175, 170, 1);
+    border-bottom: solid 2pt rgba(250, 175, 170, 1);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10pt;
+    /* border-radius: 50%; */
+}
+.visible-item-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.25fr 2.25fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordian-btn {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: left;
+}
+.favorite {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+.toolTip-span {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    background: #faafaa;
+    padding: 2pt 5pt;
+    color: #f7f7f7;
+    border-radius: 3pt;
 }
 .item-title {
     text-align: left;
+    grid-column: 3;
+    grid-row: 1;
 }
-.MenuItem__container > h2 {
-    flex: 1 1 33%;
-    justify-self: end;
+.price {
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: left;
 }
-/* .MenuItem__container > :nth-child(2) {
-    justify-self: flex-end;
-} */
+.accordian-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.no-accordian {
+    display: none;
+}
+.image {
+    grid-column: 2;
+    height: 30vh;
+    background: #f7f7f7;
+}
+.description {
+    grid-column: 3;
+    text-align: left;
+    line-height: 2;
+    background: #f7f7f7;
+    height: 100%;
+    align-self: center;
+    padding-left: 5pt;
+}
 .outer-modal {
     position: fixed;
     width: 100vw;
@@ -40,4 +100,33 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media(max-width: 950px) {
+    .item-title, .price {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .price {
+        justify-self: center;
+    }
+    .accordian-btn {
+        font-size: 1.5em;
+        justify-self: left;
+    }
+    .favorite {
+        grid-column: 1;
+        grid-row: 1 / -1;
+        font-size: 1.25em;
+    }
+    .toolTip-span {
+        padding: 1pt;
+        grid-column: 3;
+        grid-row: 2;
+        font-size: 6pt;
+        justify-self: left;
+    }
+    .description {
+        grid-column: 3 / -1;
+    }
 }

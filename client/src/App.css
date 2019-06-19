@@ -24,3 +24,10 @@ body{
 	margin-bottom: 10pt;
 	padding: 0 10pt 5pt 10pt;
 } */
+
+.root__container > div:not(:first-child) {
+        width: 60vw;
+}
+.root__container > div:last-child {
+        width: 100vw;
+}

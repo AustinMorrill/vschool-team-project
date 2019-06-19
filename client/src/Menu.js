@@ -2,10 +2,15 @@ import React, { useState, useEffect } from 'react'
 import MenuItem from "./MenuItem"
 import axios from "axios"
 import "./Menu.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBacon } from '@fortawesome/free-solid-svg-icons'
+import Fade from "react-reveal/Fade"
+
 
 const Menu = () => {
 	const [ menuItems, setMenuItems ] = useState([])
 	const [ menuType, setMenuType ] = useState("")
+	const [ show, setShow ] = useState(false)
 
 	useEffect(() => {
 		axios.get("/menu").then(response => {
@@ -14,14 +19,11 @@ const Menu = () => {
 	}, [])
 
 	const toggleModal = (id, i) => {
-		console.log("fired", id)
-		console.log(menuItems)	
 		setMenuItems(
 			menuItems.map(item => {
 				return item._id === id ? { ...item, showModal: !item.showModal } : item
 			})
 		)
-		console.log(menuItems)	
 	}
 
 	const breakfastSpecials = menuItems.filter(item => item.subMenuType === "special").map((item, i) => 
@@ -160,24 +162,6 @@ const Menu = () => {
 			{drinks}
 		</>
 
-	// const mappedMenuItems = menuItems.map((item, i) => 
-	// 	menuType === "" ? 
-	// 	<MenuItem
-	// 		key={item._id}
-	// 		item={item}
-	// 		index={i}
-	// 		toggleModal={toggleModal}
-	// 	/> 
-	// 	:
-	// 	item.menuType === menuType &&
-	// 	<MenuItem
-	// 		key={item._id}
-	// 		item={item}
-	// 		index={i}
-	// 		toggleModal={toggleModal}
-	// 	/>
-	// )
-
 	const menuHeader = menuType === "" && <h1 className="menu-title" style={{fontSize: "2.5em"}}>All Menu Items</h1>
 
 	const menuDisplay = menuType === "" ? 
@@ -199,63 +183,89 @@ const Menu = () => {
 		: menuType === "beverage" &&
 			drinksMenu
 
+	const buttonText = show ? "Hide Filters" : "Filter Menu"
+	const displayBtns = show ? "" : "no-display"
 	return (
 		<div className='menu__container' id="menu">
-			<h1>MENU</h1>
-			<label>All Menu Items
-				<input
-					type="radio"
-					name="menuType"
-					value={menuType}
-					checked={menuType === ""}
-					onChange={() => setMenuType("")}
-				/>
-			</label>
-			<label>Breakfast Menu
-				<input
-					type="radio"
-					name="menuType"
-					value={menuType}
-					checked={menuType === "breakfast"}
-					onChange={() => setMenuType("breakfast")}
-				/>
-			</label>
-			<label>Lunch Menu
-				<input
-					type="radio"
-					name="menuType"
-					value={menuType}
-					checked={menuType === "lunch"}
-					onChange={() => setMenuType("lunch")}
-				/>
-			</label>
-			<label>Sides
-				<input
-					type="radio"
-					name="menuType"
-					value={menuType}
-					checked={menuType === "side"}
-					onChange={() => setMenuType("side")}
-				/>
-			</label>
-			<label>Homemade Dough
-				<input
-					type="radio"
-					name="menuType"
-					value={menuType}
-					checked={menuType === "dough"}
-					onChange={() => setMenuType("dough")}
-				/>
-			</label>
-			<label>Beverages
-				<input
-					type="radio"
-					name="menuType"
-					value={menuType}
-					checked={menuType === "beverage"}
-					onChange={() => setMenuType("beverage")}
-				/>
-			</label>
+			<div className="menu-legend">
+				<h1>MENU</h1>
+				<span className="bacon-legend">
+					<FontAwesomeIcon 
+						icon={ faBacon } 	
+						color="red" 
+						size="3x"
+					/>  
+					<span className="legend-description">= Local Favorite</span> 
+				</span>
+				<br/><br/>
+				<div className="menu-selectors">
+					<button onClick={() => setShow(!show)}>{buttonText}</button>
+					<Fade duration={250} when={show}><div 
+						className={`selector-radio-btns ${displayBtns}`}
+					>
+						<label>All Menu Items
+							<input
+								type="radio"
+								name="menuType"
+								value={menuType}
+								checked={menuType === ""}
+								onChange={() => setMenuType("")}
+								onClick={() => setShow(!show)}
+							/>
+						</label>
+						<label>Breakfast Menu
+							<input
+								type="radio"
+								name="menuType"
+								value={menuType}
+								checked={menuType === "breakfast"}
+								onChange={() => setMenuType("breakfast")}
+								onClick={() => setShow(!show)}
+							/>
+						</label>
+						<label>Lunch Menu
+							<input
+								type="radio"
+								name="menuType"
+								value={menuType}
+								checked={menuType === "lunch"}
+								onChange={() => setMenuType("lunch")}
+								onClick={() => setShow(!show)}
+							/>
+						</label>
+						<label>Sides
+							<input
+								type="radio"
+								name="menuType"
+								value={menuType}
+								checked={menuType === "side"}
+								onChange={() => setMenuType("side")}
+								onClick={() => setShow(!show)}
+							/>
+						</label>
+						<label>Homemade Dough
+							<input
+								type="radio"
+								name="menuType"
+								value={menuType}
+								checked={menuType === "dough"}
+								onChange={() => setMenuType("dough")}
+								onClick={() => setShow(!show)}
+							/>
+						</label>
+						<label>Beverages
+							<input
+								type="radio"
+								name="menuType"
+								value={menuType}
+								checked={menuType === "beverage"}
+								onChange={() => setMenuType("beverage")}
+								onClick={() => setShow(!show)}
+							/>
+						</label>
+					</div></Fade>
+				</div>
+			</div>
 			{menuHeader}
 			{menuDisplay}
 		</div>
