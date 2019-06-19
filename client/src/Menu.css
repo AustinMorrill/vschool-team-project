@@ -1,3 +1,55 @@
 .menu__container {
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+button {
+    width: 125pt;
+    height: 30pt;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    border-radius: 3pt;
+    background: #f7f7f7;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+button:hover {
+    cursor: pointer;
+    background: rgba(130,201,30,0.2);
+    transition: 0.3s;
+}
+.menu-legend {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30pt;
+}
+.bacon-legend { 
+    display: flex;
+}
+.legend-description {
+    margin: auto;
+    margin-left: 5pt;
+}
+.menu-selectors {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30pt; 
+}
+label {
+    margin: 10pt 0;
+}
+label:hover {
+    cursor: pointer;
+    background: rgba(130,201,30,0.2);
+    transition: 0.3s;
+}
+.selector-radio-btns {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.no-display {
+    display: none;
 }
