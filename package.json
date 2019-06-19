@@ -16,9 +16,7 @@
     "express": "^4.17.1",
     "google-map-react": "^1.1.4",
     "mongoose": "^5.5.15",
-    "nodemailer": "^6.2.1",
-    "react-burger-menu": "^2.6.10",
-    "react-reveal": "^1.2.2"
+    "nodemailer": "^6.2.1"
   },
   "server": "nodemon server.js --ignore './client/'"
 }

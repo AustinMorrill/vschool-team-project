@@ -38,6 +38,7 @@ const Contact = () => {
 
 	return (
 		<div className='contact__container' id='contact'>
+			<h1>Contact us!</h1>
 			<h2>
 				Planning a special event?
 			</h2>

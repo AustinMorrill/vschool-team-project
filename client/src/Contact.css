@@ -1,6 +1,8 @@
 .contact__container {
-	background-color: rgba(174, 20, 27, .3);
-	color: rgba(217, 131, 49);
+	/* background-color: rgba(174, 20, 27, .3); */
+	color: rgba(174, 20, 27, 1);
+	text-align: center;
+	padding: 4pt;
 }
 
 .contact-form > * {
@@ -11,15 +13,19 @@
 	border: solid black 1pt;
 }
 
+.contact-form > input {
+	width: 80%;
+}
+
 .contact-form {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
-
+	width: 95%;
 }
 
-.contact-form > textarea {
-	width: 80%;
+
+::placeholder {
+	color: hsla(357%, 79%, 38%, 1);
 }
 
 

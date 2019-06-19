@@ -1,0 +1,8 @@
+/* style={{ height: "60vh", width: "90%" }} */
+
+.map__container {
+	height: 60vh;
+	width: 90%;
+	border: solid black 2pt;
+	margin: 5pt;
+}
