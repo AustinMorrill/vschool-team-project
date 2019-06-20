@@ -3,7 +3,8 @@
         /* background: #ee7168; */
         background: radial-gradient(rgb(238, 113, 104) 60%, rgb(255, 58, 44));
         color: #fcfdd8;
-        width: 100vw;
+        width: 100%;
+        /* box-sizing: border-box; */
 }
 
 /* .about__container::after {
@@ -22,7 +23,8 @@
         text-align: justify;
         width: 80%;
         line-height: 1.8;
-        padding: 0 25pt;
+        padding: 0 24pt;
+        /* box-sizing: border-box; */
 }
 
 .about__sig {
@@ -63,5 +65,12 @@
         }
         .about__sig {
                 padding-right: 120pt;
+        }
+}
+
+
+@media (min-width: 1600px) {
+        .about__sig {
+                padding-right: 400pt;
         }
 }

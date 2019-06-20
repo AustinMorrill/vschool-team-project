@@ -58,6 +58,7 @@ const Contact = () => {
 					placeholder='Full name'
 					type='text'
 					name='name'
+					minlength='4'
 					required
 				/>
 				<input
@@ -66,6 +67,7 @@ const Contact = () => {
 					placeholder='E-mail'
 					type='email'
 					name='email'
+					minlength='5'
 					required
 				/>
 				<input
@@ -74,6 +76,7 @@ const Contact = () => {
 					placeholder='Subject'
 					type='text'
 					name='subject'
+					minlength='3'
 					required
 				/>
 				<textarea
@@ -84,6 +87,8 @@ const Contact = () => {
 					cols='50'
 					name='message'
 					type='text'
+					minlength='3'
+					maxLength='500'
 					required
 				/>
 				<input type='submit' value={submit} />

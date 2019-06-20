@@ -10,9 +10,7 @@ return(
 				<header className='navbar__container'>
 					<nav className='navbar'> 
 						<h4 className='resName'>CRIDDLE'S CAFE</h4>
-						<div>
-							<HamburgerBtn click = {props.hamburgerClickHandler} cross={props.corssHandler}/>
-						</div>
+						<HamburgerBtn click = {props.hamburgerClickHandler} cross={props.corssHandler}/>
 						<div className='navigation'>
 							<a className='nav__link' href='#home'>Home</a>
 							<a className='nav__link' href='#menu'>Menu</a>
