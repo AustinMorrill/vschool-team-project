@@ -76,7 +76,7 @@ const MenuItem = (props) => {
 							style={{backgroundImage: `url(${props.item.imgUrl})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}
 						>
 							{props.item.imgUrl === "" && 
-								<h4 style={{height: "100%",background: "#333",margin: "0",color: "#f7f7f7"}}>
+								<h4 style={{height: "100%",margin: "0",color: "#faafaa"}}>
 									No Image
 								</h4>
 							}

@@ -7,10 +7,9 @@ body{
         font-size: 10pt;
         margin: 0pt;
         padding: 0pt;
-        
 }
 
-.root__container {
+.root__container, .contactAndMap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,9 +24,10 @@ body{
 	padding: 0 10pt 5pt 10pt;
 } */
 
-.root__container > div:not(:first-child) {
-        width: 60vw;
-}
-.root__container > div:last-child {
-        width: 100vw;
+@media (min-width: 1024px) {
+       .contactAndMap {
+        flex-direction: row;
+
+       }
+
 }

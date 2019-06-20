@@ -6,7 +6,7 @@
 	justify-content: space-around;
 	align-items: center;
 	transition: 0.25s;
-	background-color: #890007;
+	background-color: #da3e33;
 	height: 56px;
 	color: #fcfdd8;
 	font-size: 25px;
@@ -62,8 +62,7 @@
 
 .side_drawer {
 	height: 100%;
-	background-color: #fcfdd8;
-	box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);
+	background-color: rgb(252, 253, 216, 0.94);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -82,7 +81,7 @@
 }
 
 .side_drawer li {
-	margin: 50px;
+	margin: 40px;
 
 }
 
@@ -109,6 +108,7 @@
 
 .side_drawer.open {
 	transform: translateX(0);
+	box-shadow: 10px 0px 10px rgb(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {

@@ -1,8 +1,15 @@
 /* style={{ height: "60vh", width: "90%" }} */
 
 .map__container {
-	height: 60vh;
+	height: 35vh;
 	width: 90%;
 	border: solid black 2pt;
-	margin: 5pt;
+	margin: 5pt 0;
+}
+
+@media (min-width: 400px) {
+	.map__container {
+		width: 380px;
+		height: 380px;
+	}
 }

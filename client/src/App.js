@@ -48,8 +48,10 @@ backDropClickHandler= ()=>{
         <Home />
         <Menu />
         <About />
-        <Contact />
-        <Map />
+        <div className="contactAndMap">
+          <Contact />
+          <Map />
+        </div>
         <Footer />
       </div>
     </>

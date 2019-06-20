@@ -70,13 +70,13 @@
 .image {
     grid-column: 2;
     height: 30vh;
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
 }
 .description {
     grid-column: 3;
     text-align: left;
     line-height: 2;
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
     height: 100%;
     align-self: center;
     padding-left: 5pt;
@@ -128,5 +128,27 @@
     }
     .description {
         grid-column: 3 / -1;
+    }
+}
+ 
+@media (min-width: 768px) {
+    /* .visible-item-container {
+        justify-self: center;
+
+        width: 80%;
+    } */
+
+    .sub-menu-title {
+        width: 200pt;
+    }
+    .menuItem__container {
+        padding: 0pt 100pt;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menuItem__container {
+        align-self: center;
+        width: 1000px;
     }
 }

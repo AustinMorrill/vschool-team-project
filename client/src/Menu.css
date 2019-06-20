@@ -2,21 +2,27 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: linear-gradient(to right,rgba(255, 235, 205, 0.5) 10%,rgba(255, 235, 205, 0.25),rgba(255, 235, 205, 0.5) 90%);
+}
+.menu-legend > h1 {
+    text-align: center;
+    font-size: 2rem;
 }
 button {
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.2);
     width: 125pt;
     height: 30pt;
     margin: 0 auto;
     background: none;
     border: none;
     border-radius: 3pt;
-    background: #f7f7f7;
+    background: rgba(247, 247, 247, 0.5);
     font-size: 1.5em;
     transition: 0.3s;
 }
 button:hover {
     cursor: pointer;
-    background: rgba(130,201,30,0.2);
+    background: rgba(36, 35, 35, 0.35);
     transition: 0.3s;
 }
 .menu-legend {
@@ -25,6 +31,7 @@ button:hover {
     padding: 0 30pt;
 }
 .bacon-legend { 
+    align-self: center;
     display: flex;
 }
 .legend-description {
@@ -41,7 +48,6 @@ label {
 }
 label:hover {
     cursor: pointer;
-    background: rgba(130,201,30,0.2);
     transition: 0.3s;
 }
 .selector-radio-btns {
