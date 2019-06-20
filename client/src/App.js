@@ -33,7 +33,7 @@ backDropClickHandler= ()=>{
 // }
 
   render(){
-    let sideDrawer
+    // let sideDrawer
     let backDrop
     if (this.state.sideDrawerOpen ){     
       backDrop = <BackDrop click={this.backDropClickHandler}/>

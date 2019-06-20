@@ -127,7 +127,7 @@ const Menu = () => {
 			{breakfastSpecials}
 			<h2 className="sub-menu-title">Omelettes</h2>
 			{breakfastOmelettes}
-			<h2 className="sub-menu-title">Kids & Seniors <span style={{fontSize: "0.5em"}}>12 and under, 65 and older</span></h2>
+			<h2 className="sub-menu-title">Kids & Seniors <span style={{fontSize: "0.5em"}}><br/>12 and under, 65 and older</span></h2>
 			{breakfastKidsSeniors}
 			<h2 className="sub-menu-title">Breakfast Sides</h2>
 			{breakfastSides}
