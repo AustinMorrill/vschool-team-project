@@ -1,5 +1,14 @@
 /* style={{ height: "60vh", width: "90%" }} */
 
+.mapPin {
+	/* style={{background: 'red', width: '50pt', height: 'auto'}} */
+	background: rgb(255, 60, 60, .5);
+	width: 7pt;
+	height: 7pt;
+	border-radius: 50%;
+	position: center;
+}
+
 .map__container {
 	height: 35vh;
 	width: 90%;
