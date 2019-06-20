@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 import './Map.css'
 require("dotenv").config()
  
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className='mapPin'>{text}</div>;
 
 class SimpleMap extends Component {
   static defaultProps = {
@@ -23,7 +23,7 @@ class SimpleMap extends Component {
 					defaultCenter={this.props.center}
 					defaultZoom={this.props.zoom}
 				>
-					<AnyReactComponent lat={41.19} lng={-111.97} text="Criddle's Cafe" />
+					<AnyReactComponent lat={41.19} lng={-111.97} text=" " />
 				</GoogleMapReact>
 			</div>
 		)
