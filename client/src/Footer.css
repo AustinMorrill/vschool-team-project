@@ -38,9 +38,12 @@
 .icon{
     margin: 20px;
     color: #fcfdd8;
+    transition: .3s;
 }
 .icon:hover{
-    color:#d98331;
+    /* color: rgba(174, 20, 27, 1); */
+    color: rgb(252, 253, 216, .4);
+    transition: .3s;
 }
 .contactUs{
     color:#fcfdd8;
@@ -70,6 +73,7 @@
     }
     .contact1{
         padding:10px 0;
+        letter-spacing: .04rem;
     }
    
     .address, .hours, .contactus {

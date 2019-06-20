@@ -107,3 +107,8 @@ svg {
     }
 }
 
+@media (max-height: 850px) {
+    svg {
+        height: 95vh;
+    }
+}
