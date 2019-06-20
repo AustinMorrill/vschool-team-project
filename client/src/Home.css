@@ -100,7 +100,6 @@ svg {
     }
 }
 
-
 @media (max-height: 680px) {
     svg {
         height: 80vh;

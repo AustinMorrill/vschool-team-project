@@ -11,11 +11,11 @@ if (props.show){
  <nav className={drawerClasses}  style={{height:document.body.clientHieght}}>
     
     <ul>
-    <li><Fade left cascade when={props.show}><a href='#home' onClick={props.closeClick}>Home</a></Fade></li>
-    <li><Fade left cascade when={props.show}><a href='#menu' onClick={props.closeClick}>Menu</a></Fade></li>
-    <li><Fade left cascade when={props.show}><a href='#about' onClick={props.closeClick}>About</a></Fade></li>
-	<li><Fade left cascade when={props.show}><a href='#contact'onClick={props.closeClick}>Contact</a></Fade></li>
-	<li><Fade left  when={props.show}><a href="https://www.google.com/maps/dir//Criddle's+Cafe,+350+37th+St,+Ogden,+UT+84405/@41.196073,-111.9722274,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x87530f410524bf75:0x5f79eeb3dd479878!2m2!1d-111.9722274!2d41.196073"onClick={props.closeClick}>Directions</a></Fade></li>
+        <li><Fade left cascade when={props.show}><a href='#home' onClick={props.closeClick}>Home</a></Fade></li>
+        <li><Fade left cascade when={props.show}><a href='#menu' onClick={props.closeClick}>Menu</a></Fade></li>
+        <li><Fade left cascade when={props.show}><a href='#about' onClick={props.closeClick}>About</a></Fade></li>
+        <li><Fade left cascade when={props.show}><a href='#contact'onClick={props.closeClick}>Contact</a></Fade></li>
+        <li><Fade left  when={props.show}><a href="https://www.google.com/maps/dir//Criddle's+Cafe,+350+37th+St,+Ogden,+UT+84405/@41.196073,-111.9722274,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x87530f410524bf75:0x5f79eeb3dd479878!2m2!1d-111.9722274!2d41.196073"onClick={props.closeClick}>Directions</a></Fade></li>
     </ul>
 
 </nav>
